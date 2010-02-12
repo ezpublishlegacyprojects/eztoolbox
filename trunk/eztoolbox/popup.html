@@ -1,0 +1,26 @@
+<html>
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <link href="default.css" type="text/css" rel="stylesheet">
+  <link href="jquery.autocomplete.css" type="text/css" rel="stylesheet">
+	<link href="style.css" type="text/css" rel="stylesheet">
+  <script src="jquery.js" type="text/javascript"></script>
+  <script src="jquery.autocomplete.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+  <form method=get id="searchForm">
+    <label for="searchText">Search on ez.no/doc :</label>
+    <input class="input-text" type="text" name="searchText" id="searchText" value=""/>
+    <button class="small red awesome" id="searchButton" type="submit" name="search" value="Search">Search</button>
+  </form>
+  <div class="hide" id="loading"><img src="loading.gif" width="26px" alt="loading" title="chargement"/></div>
+  <div id="noResult" class="clear hide">
+    <p>No results found.</p>
+  </div>
+  <div id="results" class="clear"></div>
+  <div class="navigation hide">
+    <a id="next" href="#">more</a>
+  </div>
+</body>
+</html>

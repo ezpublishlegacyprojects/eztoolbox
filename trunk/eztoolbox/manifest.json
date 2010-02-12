@@ -1,0 +1,15 @@
+{
+  "name": "eZ Toolbox",
+  "version": "0.3",
+  "description": "Provides tools for eZ Publish developers.",
+  "icons": { "48": "icon48.png",
+             "128": "icon128.png" },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "popup": "popup.html"
+  },
+  "permissions": [
+    "http://ez.no/"
+  ],
+  "options_page": "options.html"
+}
