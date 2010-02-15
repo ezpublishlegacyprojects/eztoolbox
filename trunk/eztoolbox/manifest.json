@@ -9,7 +9,7 @@
     "popup": "popup.html"
   },
   "permissions": [
-    "http://ez.no/"
+    "http://*/"
   ],
   "options_page": "options.html"
 }
