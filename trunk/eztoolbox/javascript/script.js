@@ -106,8 +106,11 @@ function in_array(arrayObject, p_val) {
 
 function storeSearch( searchText, history )
 {	
-	var searchJson = JSON.parse(localStorage.getItem('searchItems'));
-
+    if ( localStorage.getItem('searchItems') )
+    {
+        var searchJson = JSON.parse(localStorage.getItem('searchItems'));
+    }
+    
     if ( !in_array(history,searchText) )
     {
 	    if (searchJson)
@@ -132,8 +135,11 @@ function storeSearch( searchText, history )
 function historyToArray(history)
 {
 	var searchItemsCount = localStorage.getItem('searchItemsCount');
-	var searchJson = JSON.parse(localStorage.getItem('searchItems'));
-	
+        if ( localStorage.getItem('searchItems') )
+        {
+            var searchJson = JSON.parse(localStorage.getItem('searchItems'));
+        }
+        
 	for ( var i=0; i<searchItemsCount; i++ )
 	{
 		history[i] = searchJson[i];

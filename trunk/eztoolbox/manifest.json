@@ -1,6 +1,6 @@
 {
   "name": "eZ Toolbox",
-  "version": "0.4",
+  "version": "0.5",
   "description": "Provides tools for eZ Publish developers.",
   "icons": { "48": "icon48.png",
              "128": "icon128.png" },
