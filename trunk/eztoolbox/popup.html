@@ -34,21 +34,21 @@
       searchControl.addSearcher(siteSearch, options);
 
       var siteSearch = new google.search.WebSearch();
+      siteSearch.setUserDefinedLabel("Doxygen 4.3");
+      siteSearch.setUserDefinedClassSuffix("doxygen-43");
+      siteSearch.setSiteRestriction("http://pubsvn.ez.no/doxygen/4.3/html");
+      searchControl.addSearcher(siteSearch, options);
+
+      var siteSearch = new google.search.WebSearch();
       siteSearch.setUserDefinedLabel("Doxygen 4.2");
       siteSearch.setUserDefinedClassSuffix("doxygen-42");
-      siteSearch.setSiteRestriction("http://pubsvn.ez.no/doxygen/4.2/html");goog
+      siteSearch.setSiteRestriction("http://pubsvn.ez.no/doxygen/4.2/html");
       searchControl.addSearcher(siteSearch, options);
 
       var siteSearch = new google.search.WebSearch();
       siteSearch.setUserDefinedLabel("Doxygen 4.1");
       siteSearch.setUserDefinedClassSuffix("doxygen-41");
-      siteSearch.setSiteRestriction("http://pubsvn.ez.no/doxygen/4.1/html");goog
-      searchControl.addSearcher(siteSearch, options);
-
-      var siteSearch = new google.search.WebSearch();
-      siteSearch.setUserDefinedLabel("Doxygen 4.0");
-      siteSearch.setUserDefinedClassSuffix("doxygen-40");
-      siteSearch.setSiteRestriction("http://pubsvn.ez.no/doxygen/4.0/html");goog
+      siteSearch.setSiteRestriction("http://pubsvn.ez.no/doxygen/4.1/html");
       searchControl.addSearcher(siteSearch, options);
 
       var drawOptions = new google.search.DrawOptions();

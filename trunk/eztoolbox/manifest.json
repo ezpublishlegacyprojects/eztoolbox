@@ -1,7 +1,8 @@
 {
   "name": "eZ Toolbox",
-  "version": "0.5",
+  "version": "0.6",
   "description": "Provides tools for eZ Publish developers.",
+  "background_page" : "background.html",
   "icons": { "48": "icon48.png",
              "128": "icon128.png" },
   "browser_action": {
@@ -9,7 +10,19 @@
     "popup": "popup.html"
   },
   "permissions": [
-    "http://*/"
+    "http://*/",
+    "tabs"
   ],
-  "options_page": "options.html"
+  "options_page": "options.html",
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js" : ["javascript/jquery.js", "javascript/contentscript.js"],
+      "run_at" : "document_idle",
+      "all_frames" : false
+    }
+  ]
 }

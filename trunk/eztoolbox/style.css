@@ -283,5 +283,9 @@ td.gsc-input {
   }
 
 .gsc-control{
-  width: 400px;
+  width: 400px!important;
+}
+
+td.gsc-search-button {
+    padding-left: 10px;
 }
