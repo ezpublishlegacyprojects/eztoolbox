@@ -1,0 +1,2 @@
+- add options to control the link with eZ Debug (always ON/on-demand/...)
+- implement enhanced debug in chrome popup
